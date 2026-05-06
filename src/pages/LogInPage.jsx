@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { toast } from 'react-toastify';
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
-import { useTheme } from "../context/ThemeProvider";
+// import { useTheme } from "../context/ThemeProvider";
 
 import { useNavigate } from "react-router-dom";
 import { useAuth } from '../context/AuthContext';
@@ -31,8 +31,8 @@ function LogInPage() {
     const [rPass, setRPass] = useState("");
     const [rConfirm, setRConfirm] = useState("");
     const [authUsers, setAuthUsers] = useState({});
-    const [term, setTerm] = useState(false);
-    const [policy, setPolicy] = useState(false);
+    // const [term, setTerm] = useState(false);
+    // const [policy, setPolicy] = useState(false);
 
 
     useEffect(() => {
@@ -86,7 +86,7 @@ function LogInPage() {
                 user.password === password
         );
         if (foundUser) {
-            toast.success("Login successful! 🎉");
+            // toast.success("Login successful! 🎉");
             login(foundUser);
             navigate("/dashboard");
 
