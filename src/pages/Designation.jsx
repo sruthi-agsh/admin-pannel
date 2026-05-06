@@ -1,6 +1,4 @@
 import { useState, useEffect } from "react";
-import NavBar from "./NavBar";
-import SideBar from "./SideBar";
 import { useTheme } from "../context/ThemeProvider";
 import Breadcrumb from "./BreadCrumbs";
 

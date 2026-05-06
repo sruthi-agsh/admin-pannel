@@ -1,5 +1,3 @@
-import NavBar from "./NavBar";
-import SideBar from "./SideBar";
 import axios from "axios";
 import { useState, useEffect } from 'react';
 import { useTheme } from "../context/ThemeProvider";

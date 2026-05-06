@@ -1,7 +1,5 @@
 // import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-import NavBar from "./NavBar";
-import SideBar from "./SideBar";
 import axios from "axios";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";

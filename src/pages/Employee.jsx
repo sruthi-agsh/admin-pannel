@@ -1,8 +1,6 @@
 import SearchIcon from "@mui/icons-material/Search";
 import ViewListIcon from '@mui/icons-material/ViewList';
 import GridViewIcon from '@mui/icons-material/GridView';
-import NavBar from "./NavBar";
-import SideBar from "./SideBar";
 import { useState, useEffect } from "react";
 import Breadcrumb from "./BreadCrumbs";
 

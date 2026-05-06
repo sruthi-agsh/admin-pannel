@@ -5,8 +5,7 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import HowToRegIcon from "@mui/icons-material/HowToReg";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
-import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
-import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+
 import { useState, useEffect } from "react";
 
 function SideBar({ collapsed}) {
