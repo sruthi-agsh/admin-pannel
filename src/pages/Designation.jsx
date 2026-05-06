@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { useTheme } from "../context/ThemeProvider";
 import Breadcrumb from "./BreadCrumbs";
 
 function Designation() {
@@ -16,7 +15,6 @@ function Designation() {
         '#64b5f6', '#ba68c8', '#4dd0e1', '#ff8a65', '#a1887f'];
 
     const departments = [...new Set(employees.map(e => e.department))];
-    const deptCount = (dept) => employees.filter(e => e.department === dept).length;
 
     return (
       <div className="min-h-screen bg-indigo-100 dark:bg-black flex">

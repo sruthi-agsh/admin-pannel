@@ -1,7 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import PeopleIcon from "@mui/icons-material/People";
 import DashboardIcon from "@mui/icons-material/Dashboard";
-import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import HowToRegIcon from "@mui/icons-material/HowToReg";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
@@ -24,11 +23,11 @@ function SideBar({ collapsed}) {
 
     useEffect(() => {
         if (empActive) setEmpOpen(true);
-    }, [location.pathname]);
+    }, [empActive]);
 
     useEffect(() => {
         if (wActive) setWOpen(true);
-    }, [location.pathname]);
+    }, [wActive]);
 
     return (
         <aside className={`
