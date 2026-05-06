@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
-import { useTheme } from "../context/ThemeProvider";
 import '../styles/calendar.css'; 
 import Breadcrumb from "./BreadCrumbs";
 import { useAuth } from "../context/AuthContext";
@@ -11,7 +10,6 @@ import { useAuth } from "../context/AuthContext";
 function DashBoard() {
     const [employees, setEmployees] = useState([]);
     const [date, setDate] = useState(new Date());
-    const {user} = useAuth;
     useEffect(() => {
         document.title = `DashBoard`;
     }, []);

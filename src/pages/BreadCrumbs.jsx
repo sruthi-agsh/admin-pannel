@@ -1,6 +1,4 @@
-import { useLocation, Link } from "react-router-dom";
-import HomeIcon from "@mui/icons-material/Home";
-
+import { useLocation } from "react-router-dom";
 const routeMap = {
     "/dashboard":   { label: "Dashboard",     parent: null },
     "/employee":    { label: "Employee List",  parent: { label: "Employees", path: "/employee" } },

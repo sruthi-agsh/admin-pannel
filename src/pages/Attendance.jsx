@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { useTheme } from "../context/ThemeProvider";
 import Breadcrumb from "./BreadCrumbs";
 
 function Attendance() {
