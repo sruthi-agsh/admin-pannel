@@ -21,7 +21,7 @@ function NavBar({ collapsed, setCollapsed }) {
                     className="ml-auto w-8 h-8 flex items-center justify-center rounded-lg bg-white/60 dark:bg-black transition-all">
                     {collapsed
                         ? <ChevronRightIcon className="text-[20px] text-white"/>
-                        : <ChevronLeftIcon  className="text-[20px] text-white" />
+                        : <ChevronLeftIcon  className="text-[20px] text-white"/>
                     }
                 </button>
             </div>

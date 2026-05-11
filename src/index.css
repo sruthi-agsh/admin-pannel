@@ -1,3 +1,23 @@
+:root {
+  --color-card-teal:    #e7f8f6;
+  --color-card-purple:  #e7daf6;
+  --color-card-fuchsia: #fbf0fd;
+
+  --color-text-teal:    #134e4a;
+  --color-text-purple:  #581c87;
+  --color-text-fuchsia: #701a75;
+  
+}
+
+.dark {
+  --color-card-teal:    #1f2937;
+  --color-card-purple:  #1f2937;
+  --color-card-fuchsia: #1f2937;
+
+  --color-text-teal:    #ffffff;
+  --color-text-purple:  #ffffff;
+  --color-text-fuchsia: #ffffff;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

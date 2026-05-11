@@ -35,22 +35,22 @@ function DashBoard() {
                   </div>
                 <div className="flex flex-col gap-8 w-full px-6">
                     <div className="grid grid-cols-3 gap-4 mt-10">
-                        <div className="bg-[#e7f8f6] dark:bg-gray-800 rounded-xl p-4">
-                            <p className="text-teal-900 dark:text-white text-xs font-medium uppercase tracking-wide">Total Employees</p>
-                            <p className="text-teal-950 dark:text-white text-2xl font-semibold mt-1">
+                        <div className="bg-card-teal dark:bg-gray-800 rounded-xl p-4">
+                            <p className="text-cardText-teal text-xs font-medium uppercase tracking-wide">Total Employees</p>
+                            <p className="text-cardText-teal text-2xl font-semibold mt-1">
                                 {totalEmployee}
                             </p>
-                            <p className="text-teal-800 dark:text-white text-xs mt-2">All departments</p>
+                            <p className="text-cardText-teal text-xs mt-2">All departments</p>
                         </div>
-                        <div className="bg-[#e7daf6] rounded-xl p-4  dark:bg-gray-800">
-                            <p className="text-purple-900 dark:text-white text-xs font-medium uppercase tracking-wide">Female Employees</p>
-                            <p className="text-purple-950 dark:text-white text-2xl font-semibold mt-1">{totalFemale}</p>
-                            <p className="text-purple-800 dark:text-white text-xs mt-2">All departments</p>
+                        <div className="bg-card-purple rounded-xl p-4">
+                            <p className="text-cardText-purple text-xs font-medium uppercase tracking-wide">Female Employees</p>
+                            <p className="text-cardText-purple text-2xl font-semibold mt-1">{totalFemale}</p>
+                            <p className="text-cardText-purple text-xs mt-2">All departments</p>
                         </div>
-                        <div className="bg-[#fbf0fd] rounded-xl p-4  dark:bg-gray-800">
-                            <p className="text-fuchsia-900 dark:text-white text-xs font-medium uppercase tracking-wide">Male Employees</p>
-                            <p className="text-fuchsia-950 dark:text-white text-2xl font-semibold mt-1">{totalMale}</p>
-                            <p className="text-fuchsia-800 dark:text-white text-xs mt-2">All departments</p>
+                        <div className="bg-card-fuchsia rounded-xl p-4  dark:bg-gray-800">
+                            <p className="text-cardText-fuchsia text-xs font-medium uppercase tracking-wide">Male Employees</p>
+                            <p className="text-cardText-fuchsia text-2xl font-semibold mt-1">{totalMale}</p>
+                            <p className="text-cardText-fuchsia text-xs mt-2">All departments</p>
                         </div>
                     </div>
                 
