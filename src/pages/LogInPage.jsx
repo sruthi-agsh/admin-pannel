@@ -43,7 +43,7 @@ function LogInPage() {
     const { login } = useAuth();
     async function FetchData() {
         try {
-            const response = await fetch('http://localhost:5000/employees');
+            const response = await fetch(`${BASE_URL}/employees`);
             if (!response.ok) throw new Error(`Response status: ${response.status}`);
             const data = await response.json();
 
@@ -131,9 +131,7 @@ function LogInPage() {
         }
         try {
 
-            const response = await fetch(
-                `http://localhost:5000/employees?emailId=${rEmail.toLowerCase()}`
-            );
+            const response = await fetch(`${BASE_URL}/employees?emailId=${rEmail.toLowerCase()}`);
             const users = await response.json();
             if (users.length === 0) {
                 toast.error("No account found.");
@@ -141,7 +139,7 @@ function LogInPage() {
             }
             const user = users[0];
             // Step 2: Update password using PATCH
-            await fetch(`http://localhost:5000/employees/${user.id}`, {
+            await fetch(`${BASE_URL}/employees/${user.id}`, {
                 method: "PATCH",
                 headers: {
                     "Content-Type": "application/json",

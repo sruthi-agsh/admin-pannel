@@ -1,3 +1,4 @@
+import BASE_URL from "../config";
 import { useState, useEffect } from "react";
 import Breadcrumb from "./BreadCrumbs";
 
@@ -6,7 +7,7 @@ function Designation() {
     const [selectedDept, setSelectedDept] = useState(null);
 
     useEffect(() => {
-        fetch("http://localhost:5000/employees")
+       fetch(`${BASE_URL}/employees`)
             .then(res => res.json())
             .then(data => setEmployees(data));
     }, []);

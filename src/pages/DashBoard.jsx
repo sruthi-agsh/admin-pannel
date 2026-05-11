@@ -15,7 +15,7 @@ function DashBoard() {
     }, []);
 
     useEffect(() => {
-        axios.get("http://localhost:5000/employees")
+       axios.get(`${BASE_URL}/employees`)
             .then(response => {
                 setEmployees(response.data)
             })

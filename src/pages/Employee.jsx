@@ -19,7 +19,7 @@ function Employee() {
     const initials = (name) => name.split(' ').map(w => w[0]).join('').toUpperCase();
 
     useEffect(() => {
-        fetch("http://localhost:5000/employees")
+       fetch(`${BASE_URL}/employees`)
             .then(res => res.json())
             .then(data => setEmployees(data));
     }, []);

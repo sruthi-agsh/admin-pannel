@@ -1,3 +1,4 @@
+import BASE_URL from "../config";
 import { useState, useEffect } from "react";
 import Breadcrumb from "./BreadCrumbs";
 
@@ -6,7 +7,7 @@ function Attendance() {
     const [filter, setFilter] = useState("All");
 
     useEffect(() => {
-        fetch("http://localhost:5000/attendance")
+        fetch(`${BASE_URL}/attendance`)
             .then(res => res.json())
             .then(data => setAttendance(data));
     }, []);

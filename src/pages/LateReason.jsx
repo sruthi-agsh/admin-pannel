@@ -1,3 +1,4 @@
+import BASE_URL from "../config";
 import axios from "axios";
 import { useState, useEffect } from 'react';
 import Breadcrumb from "./BreadCrumbs";
@@ -5,7 +6,7 @@ function LateReason() {
     const [late, setLate] = useState([]);
 
     useEffect(() => {
-        axios.get("http://localhost:5000/attendance")
+        axios.get(`${BASE_URL}/attendance`)
             .then(response => {
                 setLate(response.data);
             });
