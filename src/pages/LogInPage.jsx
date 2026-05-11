@@ -1,3 +1,4 @@
+import BASE_URL from "../config";
 import { useState, useEffect } from 'react'
 import { toast } from 'react-toastify';
 import Visibility from "@mui/icons-material/Visibility";

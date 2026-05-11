@@ -1,3 +1,4 @@
+import BASE_URL from "../config";
 import SearchIcon from "@mui/icons-material/Search";
 import ViewListIcon from '@mui/icons-material/ViewList';
 import GridViewIcon from '@mui/icons-material/GridView';
